@@ -1,0 +1,6 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.Kinect.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.Kinect.pdb
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.Kinect.xml
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Video.Kinect\obj\Debug\Video.Kinect.csprojResolveAssemblyReference.cache
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Video.Kinect\obj\Debug\AForge.Video.Kinect.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Video.Kinect\obj\Debug\AForge.Video.Kinect.pdb

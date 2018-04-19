@@ -1,0 +1,21 @@
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog NEAT TicTacToe Experiment.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog_NEAT_TicTacToe_Experiment.encog_dotnet_core_3._4.encog_core_cs.encog-core-cs.resources
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog.ML.Data.Market.Loader.CSVFormLoader.resources
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog.ML.Data.Market.Loader.CSVFormSimple.resources
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog.Util.Simple.TrainingDialog.resources
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog NEAT TicTacToe Experiment.csproj.GenerateResource.Cache
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog NEAT TicTacToe Experiment.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\bin\Debug\encog-dotnet-core-3.4\encog.mdb
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\bin\Debug\Encog NEAT TicTacToe Experiment.exe.config
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\bin\Debug\Encog NEAT TicTacToe Experiment.exe
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\bin\Debug\Encog NEAT TicTacToe Experiment.pdb
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\bin\Debug\MonAgentListener.dll
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog NEAT TicTacToe Experiment.exe
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog NEAT TicTacToe Experiment.pdb
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\NeuralNetworkVisualizer.g.cs
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog NEAT TicTacToe Experiment_Content.g.cs
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog NEAT TicTacToe Experiment_MarkupCompile.cache
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog NEAT TicTacToe Experiment_MarkupCompile.lref
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\NeuralNetworkVisualizer.baml
+C:\Users\Administrator\Downloads\Encog NEAT TicTacToe Experiment\Encog NEAT TicTacToe Experiment\obj\Debug\Encog NEAT TicTacToe Experiment.g.resources

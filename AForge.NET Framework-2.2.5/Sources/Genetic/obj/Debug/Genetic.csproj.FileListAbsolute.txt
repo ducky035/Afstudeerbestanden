@@ -1,0 +1,6 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Genetic.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Genetic.pdb
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Genetic.xml
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Genetic\obj\Debug\Genetic.csprojResolveAssemblyReference.cache
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Genetic\obj\Debug\AForge.Genetic.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Genetic\obj\Debug\AForge.Genetic.pdb

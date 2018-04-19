@@ -1,0 +1,3 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.TeRK\obj\Debug\Robotics.TeRK.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.TeRK\obj\Debug\Robotics.TeRK.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.TeRK\obj\Debug\Robotics.TeRK.csproj.CoreCompileInputs.cache

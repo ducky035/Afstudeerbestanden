@@ -1,0 +1,10 @@
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.xml
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.DirectShow\obj\Release\Video.DirectShow.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.DirectShow\obj\Release\AForge.Video.DirectShow.Properties.Resources.resources
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.DirectShow\obj\Release\AForge.Video.DirectShow.VideoCaptureDeviceForm.resources
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.DirectShow\obj\Release\Video.DirectShow.csproj.GenerateResource.Cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.DirectShow\obj\Release\Video.DirectShow.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.DirectShow\obj\Release\AForge.Video.DirectShow.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.DirectShow\obj\Release\AForge.Video.DirectShow.pdb

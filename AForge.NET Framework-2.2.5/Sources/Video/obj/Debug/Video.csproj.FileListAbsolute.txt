@@ -1,0 +1,6 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.pdb
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.xml
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Video\obj\Debug\Video.csprojResolveAssemblyReference.cache
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Video\obj\Debug\AForge.Video.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Video\obj\Debug\AForge.Video.pdb

@@ -1,0 +1,15 @@
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Controls.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Controls.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Controls.xml
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\Controls.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\AForge.Controls.Chart.resources
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\AForge.Controls.HistogramEventArgs.resources
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\AForge.Controls.VideoSourcePlayer.resources
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\AForge.Controls.HuePicker.resources
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\AForge.Controls.SliderControl.resources
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\AForge.Controls.ColorSlider.resources
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\AForge.Controls.ManipulatorControl.resources
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\Controls.csproj.GenerateResource.Cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\Controls.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\AForge.Controls.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Controls\obj\Release\AForge.Controls.pdb

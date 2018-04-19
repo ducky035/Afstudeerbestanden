@@ -1,0 +1,13 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Lego.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Lego.pdb
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Lego.xml
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Lego\obj\Debug\Lego.csprojResolveAssemblyReference.cache
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Lego\obj\Debug\AForge.Robotics.Lego.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Lego\obj\Debug\AForge.Robotics.Lego.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Lego.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Lego.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Lego.xml
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Lego\obj\Debug\Lego.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Lego\obj\Debug\Lego.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Lego\obj\Debug\AForge.Robotics.Lego.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Lego\obj\Debug\AForge.Robotics.Lego.pdb

@@ -1,0 +1,6 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Neuro.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Neuro.pdb
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Neuro.xml
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Neuro\obj\Debug\Neuro.csprojResolveAssemblyReference.cache
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Neuro\obj\Debug\AForge.Neuro.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Neuro\obj\Debug\AForge.Neuro.pdb

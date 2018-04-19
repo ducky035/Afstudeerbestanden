@@ -1,0 +1,7 @@
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Imaging.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Imaging.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Imaging.xml
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Imaging\obj\Release\Imaging.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Imaging\obj\Release\Imaging.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Imaging\obj\Release\AForge.Imaging.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Imaging\obj\Release\AForge.Imaging.pdb
