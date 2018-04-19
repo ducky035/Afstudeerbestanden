@@ -1,0 +1,541 @@
+RecordEdits
+Define  BooleanIndicator  {  Oven_Beschikbaarheid_Indicator  Pers_Beschikbaarheid_Indicator  Slijp_Beschikbaarheid_Indicator  }
+Define  Branch  {  Oven_Uitval/Niet  Pers_Uitval/Niet  Slijp_Uitval/Niet  }
+Define  ColladaModel  {  Axis  Grid100x100  }
+Define  DiscreteDistribution  {  Oven_Uitval_Kans  Pers_Uitval_Kans  Slijp_Uitval_Kans  }
+Define  DisplayEntity  {  RT-2700  Server_not_Working  XY-Grid  XYZ-Axis  zwarte_RT-2700  }
+Define  DowntimeEntity  {  Oven_Beschikbaarheid  Pers_Beschikbaarheid  Pers_Uit_Bedrijf  Slijp_Beschikbaarheid  Slijp_Uit_Bedrijf  }
+Define  EntityContainer  {  EntityContainer1  }
+Define  EntityConveyor  {  HtoU  MtoP  PtoU  StoU  Trommelen  UtoO  UtoS  }
+Define  EntityGenerator  {  Magazijn  }
+Define  EntityLabel  {  10mm_staalkabel_Label  101RH_1_Label  HarderijBuffer_Bijvullen_Label  HtoU_Label  Lijn_12_Label  Magazijn_Label  MtoP_Label  OutputBuffer_Label  OvenBuffer_Label  Oven_1_Label  Oven_Beschikbaarheid_Label  Oven_Downtime_Duration_Label  Oven_Downtime_Interval_Label  Oven_Uitval/Niet_Label  Oven_Uitval_Kans_Label  Oven_Uitval_Label  PersBuffer_Label  Pers_Beschikbaarheid_Indicator_Label  Pers_Beschikbaarheid_Label  Pers_Downtime_Duration_Label  Pers_Downtime_Interval_Label  Pers_Uit_Bedrijf_Label  Pers_Uitval/Niet_Label  Pers_Uitval_Kans_Label  Pers_Uitval_Label  PtoU_Label  Rol_Teller_Label  Rol_Teller_Logger_Label  SlijpBuffer_Label  Slijp_Beschikbaarheid_Label  Slijp_Downtime_Duration_Label  Slijp_Downtime_Interval_Label  Slijp_Uit_Bedrijf_Label  Slijp_Uitval/Niet_Label  Slijp_Uitval_Kans_Label  Slijp_Uitval_Label  SlijperijBuffer_Bijvullen_Label  StoU_Label  Trommelen_Label  UtoO_Label  UtoS_Label  }
+Define  ExponentialDistribution  {  Oven_Downtime_Duration  Pers_Downtime_Duration  Slijp_Downtime_Duration  }
+Define  ExpressionLogger  {  Rol_Teller_Logger  }
+Define  ExpressionThreshold  {  HarderijBuffer_Bijvullen  Pers_Uit_Bedrijf_Threshold  Slijp_Uit_Bedrijf_Threshold  SlijperijBuffer_Bijvullen  }
+Define  ImageModel  {  RT-27001-model  staalkabels-10-mm-model  zwarte_RT-2700-model  }
+Define  OverlayClock  {  Clock  }
+Define  OverlayText  {  Title  }
+Define  Pack  {  Pack1  }
+Define  Queue  {  OutputBuffer  OvenBuffer  Oven_Uitval  PersBuffer  Pers_Uitval  Queue1  SlijpBuffer  Slijp_Uitval  }
+Define  Server  {  101RH_1  Lijn_12  Oven_1  }
+Define  SetGraphics  {  10mm_staalkabel_to_zwarte_RT-2700  zwarte_RT-2700_to_RT-2700  }
+Define  SimEntity  {  10mm_staalkabel  }
+Define  Text  {  OutputBufferText  OvenBufferText  Oven_Uitval_Text  PersBufferText  Pers_Uitval_Text  SlijpBufferText  Slijp_Uitval_Text  Text1  Text2  Text3  Text4  Text5  Text6  Text7  Text8  Text9  Text10  }
+Define  UniformDistribution  {  Oven_Downtime_Interval  Pers_Downtime_Interval  Slijp_Downtime_Interval  }
+Define  View  {  View1  }
+Define  WeightedSum  {  Rol_Teller  }
+Oven_Downtime_Duration  UnitType  {  TimeUnit  }
+Oven_Downtime_Interval  UnitType  {  TimeUnit  }
+Oven_Uitval_Kans  UnitType  {  DimensionlessUnit  }
+Pers_Downtime_Duration  UnitType  {  TimeUnit  }
+Pers_Downtime_Interval  UnitType  {  TimeUnit  }
+Pers_Uitval_Kans  UnitType  {  DimensionlessUnit  }
+Rol_Teller  UnitType  {  DimensionlessUnit  }
+Slijp_Downtime_Duration  UnitType  {  TimeUnit  }
+Slijp_Downtime_Interval  UnitType  {  TimeUnit  }
+Slijp_Uitval_Kans  UnitType  {  DimensionlessUnit  }
+Rol_Teller_Logger  UnitTypeList  {  DimensionlessUnit  }
+10mm_staalkabel  AttributeDefinitionList  {  {  gewicht  8.262361  }  {  ovenNorm  126.8931  s  }  }
+zwarte_RT-2700  AttributeDefinitionList  {  }
+Simulation  Description  {  Simulation run control inputs  }
+Simulation  RunDuration  {  744  h  }
+Simulation  PauseCondition  {  [Pers_Uitval].QueueLength + [Oven_Uitval].QueueLength + [Slijp_Uitval].QueueLength + [OutputBuffer].QueueLength == [Magazijn].NumberGenerated && [Magazijn].NumberGenerated > 0 && [Rol_Teller_Logger].LogTime == [Rol_Teller_Logger].SimTime  }
+Simulation  ExitAtPauseCondition  {  TRUE  }
+Simulation  GlobalSubstreamSeed  {  [Simulation].RunNumber  }
+Simulation  RunIndexDefinitionList  {  100  }
+Simulation  EndingRunNumber  {  100  }
+Simulation  SnapToGrid  {  TRUE  }
+Simulation  SnapGridSpacing  {  0.1  m  }
+Simulation  IncrementSize  {  0.1  m  }
+Simulation  RealTime  {  TRUE  }
+Simulation  RealTimeFactor  {  4096  }
+Simulation  PauseTime  {  }
+Simulation  ShowModelBuilder  {  TRUE  }
+Simulation  ShowObjectSelector  {  TRUE  }
+Simulation  ShowInputEditor  {  TRUE  }
+Simulation  ShowOutputViewer  {  TRUE  }
+Simulation  ShowPropertyViewer  {  FALSE  }
+Simulation  ShowLogViewer  {  FALSE  }
+Simulation  ShowEventViewer  {  FALSE  }
+Simulation  OutputViewerSize  {  1171  310  }
+Simulation  EventViewerSize  {  666  465  }
+Simulation  ControlPanelWidth  {  1024  }
+10mm_staalkabel  StateGraphics  {  }
+10mm_staalkabel  Position  {  0.100000  1.000000  0.000000  m  }
+10mm_staalkabel  Alignment  {  0.0  0.0  0.0  }
+10mm_staalkabel  Points  {  {  -4.500  -1.200  0.000  m  }  {  -3.500  -1.200  0.000  m  }  }
+10mm_staalkabel  RelativeEntity  {  Magazijn  }
+10mm_staalkabel  DisplayModel  {  staalkabels-10-mm-model  }
+10mm_staalkabel_Label  TargetEntity  {  10mm_staalkabel  }
+10mm_staalkabel_Label  Position  {  -0.000000  -0.400000  0.000000  m  }
+10mm_staalkabel_Label  Size  {  2.196543  0.300000  0.000000  m  }
+10mm_staalkabel_Label  RelativeEntity  {  10mm_staalkabel  }
+10mm_staalkabel_to_zwarte_RT-2700  NextComponent  {  PtoU  }
+10mm_staalkabel_to_zwarte_RT-2700  GraphicsList  {  zwarte_RT-2700  }
+10mm_staalkabel_to_zwarte_RT-2700  Position  {  0.500000  -1.900000  0.000000  m  }
+10mm_staalkabel_to_zwarte_RT-2700  Size  {  0.25  0.25  0.25  m  }
+10mm_staalkabel_to_zwarte_RT-2700  Points  {  {  -3.300  -5.700  0.000  m  }  {  -2.300  -5.700  0.000  m  }  }
+101RH_1  StateGraphics  {  {  Breakdown  Server_not_Working  }  {  Idle  Server_not_Working  }  {  Maintenance  Server_not_Working  }  {  Stopped  Server_not_Working  }  }
+101RH_1  NextComponent  {  10mm_staalkabel_to_zwarte_RT-2700  }
+101RH_1  StateAssignment  {  }
+101RH_1  WaitQueue  {  PersBuffer  }
+101RH_1  ServiceTime  {  167.6955  s  }
+101RH_1  Position  {  -0.500000  -2.500000  0.000000  m  }
+101RH_1  Points  {  {  -2.800  -4.700  0.000  m  }  {  -1.800  -4.700  0.000  m  }  }
+101RH_1  ImmediateThresholdList  {  Pers_Uit_Bedrijf_Threshold  }
+101RH_1  OperatingThresholdList  {  HarderijBuffer_Bijvullen  }
+101RH_1  ImmediateMaintenanceList  {  }
+101RH_1  ImmediateBreakdownList  {  Pers_Beschikbaarheid  }
+101RH_1_Label  TargetEntity  {  101RH_1  }
+101RH_1_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+101RH_1_Label  Size  {  1.206882  0.300000  0.000000  m  }
+101RH_1_Label  RelativeEntity  {  101RH_1  }
+Axis  ColladaFile  {  <res>/shapes/axis_text.dae  }
+Clock  Description  {  Simulation date and time (no leap years or leap seconds)  }
+Clock  TextHeight  {  10  }
+Clock  StartingYear  {  2018  }
+Clock  DateFormat  {  yyyy-MMM-dd HH:mm:ss.SSS  }
+Clock  ScreenPosition  {  15  15  }
+Clock  AlignBottom  {  TRUE  }
+Clock  FontColour  {  gray20  }
+Clock  FontStyle  {  ITALIC  }
+EntityContainer1  Position  {  -0.600000  -0.300000  0.000000  m  }
+EntityContainer1  Points  {  {  -0.600  -0.300  0.000  m  }  {  0.400  -0.300  0.000  m  }  }
+Grid100x100  ColladaFile  {  <res>/shapes/grid100x100.dae  }
+HarderijBuffer_Bijvullen  OpenCondition  {  [OvenBuffer].QueueLength < 3 * 72  }
+HarderijBuffer_Bijvullen  CloseCondition  {  }
+HarderijBuffer_Bijvullen  InitialOpenValue  {  TRUE  }
+HarderijBuffer_Bijvullen  Position  {  0.000000  -1.000000  0.000000  m  }
+HarderijBuffer_Bijvullen  Points  {  {  0.100  -0.400  0.000  m  }  {  1.100  -0.400  0.000  m  }  }
+HarderijBuffer_Bijvullen  RelativeEntity  {  101RH_1  }
+HarderijBuffer_Bijvullen_Label  TargetEntity  {  HarderijBuffer_Bijvullen  }
+HarderijBuffer_Bijvullen_Label  Position  {  0.000000  -0.400000  0.000000  m  }
+HarderijBuffer_Bijvullen_Label  Size  {  2.953823  0.300000  0.000000  m  }
+HarderijBuffer_Bijvullen_Label  RelativeEntity  {  HarderijBuffer_Bijvullen  }
+HarderijBuffer_Bijvullen_Label  Show  {  TRUE  }
+HtoU  NextComponent  {  Oven_Uitval/Niet  }
+HtoU  TravelTime  {  1  s  }
+HtoU  Position  {  3.500000  -2.500000  0.000000  m  }
+HtoU  Points  {  {  3.500  -2.500  0.000  m  }  {  4.000  -2.500  0.000  m  }  }
+HtoU_Label  TargetEntity  {  HtoU  }
+HtoU_Label  Position  {  0.200000  -0.200000  0.000000  m  }
+HtoU_Label  Size  {  0.720180  0.300000  0.000000  m  }
+HtoU_Label  RelativeEntity  {  HtoU  }
+HtoU_Label  Show  {  TRUE  }
+Lijn_12  StateGraphics  {  {  Breakdown  Server_not_Working  }  {  Idle  Server_not_Working  }  {  Maintenance  Server_not_Working  }  {  Stopped  Server_not_Working  }  }
+Lijn_12  NextComponent  {  zwarte_RT-2700_to_RT-2700  }
+Lijn_12  WaitQueue  {  SlijpBuffer  }
+Lijn_12  ServiceTime  {  442.5268  s  }
+Lijn_12  Position  {  5.500000  -2.500000  0.000000  m  }
+Lijn_12  Points  {  {  4.100  -2.300  0.000  m  }  {  5.100  -2.300  0.000  m  }  }
+Lijn_12  ImmediateThresholdList  {  Slijp_Uit_Bedrijf_Threshold  }
+Lijn_12  ImmediateMaintenanceList  {  }
+Lijn_12  ImmediateBreakdownList  {  Slijp_Beschikbaarheid  }
+Lijn_12_Label  TargetEntity  {  Lijn_12  }
+Lijn_12_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Lijn_12_Label  Size  {  1.013398  0.300000  0.000000  m  }
+Lijn_12_Label  RelativeEntity  {  Lijn_12  }
+Magazijn  NextComponent  {  MtoP  }
+Magazijn  InterArrivalTime  {  1  s  }
+Magazijn  EntitiesPerArrival  {  1  }
+Magazijn  PrototypeEntity  {  10mm_staalkabel  }
+Magazijn  MaxNumber  {  1000  }
+Magazijn  Position  {  -3.500000  -2.500000  0.000000  m  }
+Magazijn  Points  {  {  2.600  1.500  0.000  m  }  {  3.600  1.500  0.000  m  }  }
+Magazijn_Label  TargetEntity  {  Magazijn  }
+Magazijn_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Magazijn_Label  Size  {  1.178757  0.300000  0.000000  m  }
+Magazijn_Label  RelativeEntity  {  Magazijn  }
+MtoP  NextComponent  {  101RH_1  }
+MtoP  TravelTime  {  1  s  }
+MtoP  Position  {  -2.500000  -2.600000  0.000000  m  }
+MtoP  Points  {  {  -2.500  -2.600  0.000  m  }  {  -1.500  -2.600  0.000  m  }  }
+MtoP_Label  TargetEntity  {  MtoP  }
+MtoP_Label  Position  {  0.500000  -0.200000  0.000000  m  }
+MtoP_Label  Size  {  0.726563  0.300000  0.000000  m  }
+MtoP_Label  RelativeEntity  {  MtoP  }
+MtoP_Label  Show  {  TRUE  }
+OutputBuffer  MaxPerLine  {  72  }
+OutputBuffer  Position  {  8.500000  -2.500000  0.000000  m  }
+OutputBuffer  Orientation  {  0  0  270  deg  }
+OutputBuffer  Points  {  {  10.500  -4.500  0.000  m  }  {  11.500  -4.500  0.000  m  }  }
+OutputBufferText  Format  {  %s  }
+OutputBufferText  DataSource  {  [OutputBuffer].QueueLength  }
+OutputBufferText  Position  {  0.000000  -0.700000  0.000000  m  }
+OutputBufferText  Points  {  {  6.500  -2.000  0.000  m  }  {  7.500  -2.000  0.000  m  }  }
+OutputBufferText  RelativeEntity  {  OutputBuffer  }
+OutputBuffer_Label  TargetEntity  {  OutputBuffer  }
+OutputBuffer_Label  Position  {  0.000000  -0.400000  0.000000  m  }
+OutputBuffer_Label  Size  {  1.654388  0.300000  0.000000  m  }
+OutputBuffer_Label  RelativeEntity  {  OutputBuffer  }
+OvenBuffer  RenegeCondition  {  }
+OvenBuffer  Position  {  2.000000  -1.600000  0.000000  m  }
+OvenBuffer  Orientation  {  0  0  270  deg  }
+OvenBuffer  Points  {  {  2.600  -4.200  0.000  m  }  {  3.600  -4.200  0.000  m  }  }
+OvenBufferText  Format  {  %s  }
+OvenBufferText  DataSource  {  [OvenBuffer].QueueLength  }
+OvenBufferText  Position  {  1.000000  0.100000  0.000000  m  }
+OvenBufferText  Points  {  {  0.400  -2.000  0.000  m  }  {  1.400  -2.000  0.000  m  }  }
+OvenBufferText  RelativeEntity  {  OvenBuffer  }
+OvenBuffer_Label  TargetEntity  {  OvenBuffer  }
+OvenBuffer_Label  Position  {  0.000000  -0.400000  0.000000  m  }
+OvenBuffer_Label  Size  {  1.448338  0.300000  0.000000  m  }
+OvenBuffer_Label  RelativeEntity  {  OvenBuffer  }
+Oven_1  NextComponent  {  HtoU  }
+Oven_1  WaitQueue  {  OvenBuffer  }
+Oven_1  ServiceTime  {  this.obj.Count * this.obj.EntityList(1).ovenNorm  }
+Oven_1  Position  {  3.600000  -0.100000  0.000000  m  }
+Oven_1  Points  {  {  3.600  -0.100  0.000  m  }  {  4.600  -0.100  0.000  m  }  }
+Oven_1  OperatingThresholdList  {  SlijperijBuffer_Bijvullen  }
+Oven_1  ImmediateBreakdownList  {  Oven_Beschikbaarheid  }
+Oven_1_Label  TargetEntity  {  Oven_1  }
+Oven_1_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Oven_1_Label  Size  {  1.027959  0.300000  0.000000  m  }
+Oven_1_Label  RelativeEntity  {  Oven_1  }
+Oven_Beschikbaarheid  Interval  {  Oven_Downtime_Interval  }
+Oven_Beschikbaarheid  Duration  {  Oven_Downtime_Duration  }
+Oven_Beschikbaarheid  Position  {  0.000000  -1.200000  0.000000  m  }
+Oven_Beschikbaarheid  Points  {  {  0.000  -5.200  0.000  m  }  {  1.000  -5.200  0.000  m  }  }
+Oven_Beschikbaarheid  RelativeEntity  {  SlijperijBuffer_Bijvullen  }
+Oven_Beschikbaarheid_Indicator  DataSource  {  [Oven_Beschikbaarheid].WorkingState  }
+Oven_Beschikbaarheid_Indicator  Position  {  -0.300000  0.400000  0.000000  m  }
+Oven_Beschikbaarheid_Indicator  Points  {  {  -0.175  0.275  0.000  m  }  {  0.825  0.275  0.000  m  }  }
+Oven_Beschikbaarheid_Indicator  RelativeEntity  {  Oven_Beschikbaarheid  }
+Oven_Beschikbaarheid_Label  TargetEntity  {  Oven_Beschikbaarheid  }
+Oven_Beschikbaarheid_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Oven_Beschikbaarheid_Label  Size  {  2.778690  0.300000  0.000000  m  }
+Oven_Beschikbaarheid_Label  RelativeEntity  {  Oven_Beschikbaarheid  }
+Oven_Downtime_Duration  RandomSeed  {  5  }
+Oven_Downtime_Duration  MinValue  {  300  s  }
+Oven_Downtime_Duration  MaxValue  {  30  h  }
+Oven_Downtime_Duration  Mean  {  0.75  h  }
+Oven_Downtime_Duration  Position  {  0.000000  -1.500000  0.000000  m  }
+Oven_Downtime_Duration  Points  {  {  0.500  -2.000  0.000  m  }  {  1.500  -2.000  0.000  m  }  }
+Oven_Downtime_Duration  RelativeEntity  {  Oven_Downtime_Interval  }
+Oven_Downtime_Duration_Label  TargetEntity  {  Oven_Downtime_Duration  }
+Oven_Downtime_Duration_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Oven_Downtime_Duration_Label  Size  {  3.199568  0.300000  0.000000  m  }
+Oven_Downtime_Duration_Label  RelativeEntity  {  Oven_Downtime_Duration  }
+Oven_Downtime_Interval  RandomSeed  {  4  }
+Oven_Downtime_Interval  MinValue  {  300  s  }
+Oven_Downtime_Interval  MaxValue  {  11.1671  h  }
+Oven_Downtime_Interval  Position  {  0.000000  -1.300000  0.000000  m  }
+Oven_Downtime_Interval  Points  {  {  0.500  -1.800  0.000  m  }  {  1.500  -1.800  0.000  m  }  }
+Oven_Downtime_Interval  RelativeEntity  {  Oven_Beschikbaarheid  }
+Oven_Downtime_Interval_Label  TargetEntity  {  Oven_Downtime_Interval  }
+Oven_Downtime_Interval_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Oven_Downtime_Interval_Label  Size  {  3.124169  0.300000  0.000000  m  }
+Oven_Downtime_Interval_Label  RelativeEntity  {  Oven_Downtime_Interval  }
+Oven_Uitval  Position  {  5.500000  -9.500000  -0.000000  m  }
+Oven_Uitval  Orientation  {  0  0  90  deg  }
+Oven_Uitval  Points  {  {  5.500  -5.500  0.000  m  }  {  6.500  -5.500  0.000  m  }  }
+Oven_Uitval/Niet  NextComponentList  {  Oven_Uitval  UtoS  }
+Oven_Uitval/Niet  Choice  {  Oven_Uitval_Kans  }
+Oven_Uitval/Niet  Position  {  4.000000  -4.500000  0.000000  m  }
+Oven_Uitval/Niet  Points  {  {  4.100  -4.800  0.000  m  }  {  5.100  -4.800  0.000  m  }  }
+Oven_Uitval/Niet_Label  TargetEntity  {  Oven_Uitval/Niet  }
+Oven_Uitval/Niet_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Oven_Uitval/Niet_Label  Size  {  2.162733  0.300000  0.000000  m  }
+Oven_Uitval/Niet_Label  RelativeEntity  {  Oven_Uitval/Niet  }
+Oven_Uitval_Kans  RandomSeed  {  6  }
+Oven_Uitval_Kans  MinValue  {  1  }
+Oven_Uitval_Kans  MaxValue  {  2  }
+Oven_Uitval_Kans  ValueList  {  1  2  }
+Oven_Uitval_Kans  ProbabilityList  {  0  1  }
+Oven_Uitval_Kans  Position  {  4.000000  -5.700000  0.000000  m  }
+Oven_Uitval_Kans  Points  {  {  4.500  -6.200  0.000  m  }  {  5.500  -6.200  0.000  m  }  }
+Oven_Uitval_Kans_Label  TargetEntity  {  Oven_Uitval_Kans  }
+Oven_Uitval_Kans_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Oven_Uitval_Kans_Label  Size  {  2.256283  0.300000  0.000000  m  }
+Oven_Uitval_Kans_Label  RelativeEntity  {  Oven_Uitval_Kans  }
+Oven_Uitval_Label  TargetEntity  {  Oven_Uitval  }
+Oven_Uitval_Label  Position  {  0.000000  -0.400000  0.000000  m  }
+Oven_Uitval_Label  Size  {  1.550465  0.300000  0.000000  m  }
+Oven_Uitval_Label  RelativeEntity  {  Oven_Uitval  }
+Oven_Uitval_Text  Format  {  %s  }
+Oven_Uitval_Text  DataSource  {  [Oven_Uitval].QueueLength  }
+Oven_Uitval_Text  Position  {  1.000000  0.000000  0.000000  m  }
+Oven_Uitval_Text  Points  {  {  9.800  -6.000  0.000  m  }  {  10.800  -6.000  0.000  m  }  }
+Oven_Uitval_Text  RelativeEntity  {  Oven_Uitval  }
+Pack1  NextComponent  {  Oven_1  }
+Pack1  WaitQueue  {  Queue1  }
+Pack1  PrototypeEntityContainer  {  EntityContainer1  }
+Pack1  NumberOfEntities  {  notNull(this.obj) ? floor(500 / this.obj.gewicht) : 9999999999  }
+Pack1  NumberToStart  {  notNull(this.obj) ? floor(500 / this.obj.gewicht) : 9999999999  }
+Pack1  Position  {  2.800000  -2.300000  0.000000  m  }
+Pack1  Size  {  0.5  0.5  0.5  m  }
+Pack1  Points  {  {  2.600  -2.300  0.000  m  }  {  3.600  -2.300  0.000  m  }  }
+PersBuffer  Position  {  -0.500000  0.900000  0.000000  m  }
+PersBuffer  Orientation  {  0  0  270  deg  }
+PersBuffer  Points  {  {  -0.700  -4.300  0.000  m  }  {  0.300  -4.300  0.000  m  }  }
+PersBuffer  RelativeEntity  {  101RH_1  }
+PersBufferText  Format  {  %s  }
+PersBufferText  DataSource  {  [PersBuffer].QueueLength  }
+PersBufferText  Position  {  1.000000  0.100000  0.000000  m  }
+PersBufferText  Points  {  {  0.100  -1.900  0.000  m  }  {  1.100  -1.900  0.000  m  }  }
+PersBufferText  RelativeEntity  {  PersBuffer  }
+PersBuffer_Label  TargetEntity  {  PersBuffer  }
+PersBuffer_Label  Position  {  0.000000  -0.400000  0.000000  m  }
+PersBuffer_Label  Size  {  1.368850  0.300000  0.000000  m  }
+PersBuffer_Label  RelativeEntity  {  PersBuffer  }
+Pers_Beschikbaarheid  Interval  {  Pers_Downtime_Interval  }
+Pers_Beschikbaarheid  Duration  {  Pers_Downtime_Duration  }
+Pers_Beschikbaarheid  Position  {  0.000000  -1.200000  0.000000  m  }
+Pers_Beschikbaarheid  Points  {  {  0.000  -7.500  0.000  m  }  {  1.000  -7.500  0.000  m  }  }
+Pers_Beschikbaarheid  RelativeEntity  {  HarderijBuffer_Bijvullen  }
+Pers_Beschikbaarheid_Indicator  DataSource  {  [Pers_Beschikbaarheid].WorkingState  }
+Pers_Beschikbaarheid_Indicator  Position  {  -0.300000  0.400000  0.000000  m  }
+Pers_Beschikbaarheid_Indicator  Points  {  {  -0.675  -6.725  0.000  m  }  {  0.325  -6.725  0.000  m  }  }
+Pers_Beschikbaarheid_Indicator  RelativeEntity  {  Pers_Beschikbaarheid  }
+Pers_Beschikbaarheid_Indicator_Label  TargetEntity  {  Pers_Beschikbaarheid_Indicator  }
+Pers_Beschikbaarheid_Indicator_Label  Position  {  0.000000  -0.275000  0.000000  m  }
+Pers_Beschikbaarheid_Indicator_Label  Size  {  3.905485  0.300000  0.000000  m  }
+Pers_Beschikbaarheid_Indicator_Label  RelativeEntity  {  Pers_Beschikbaarheid_Indicator  }
+Pers_Beschikbaarheid_Indicator_Label  Show  {  FALSE  }
+Pers_Beschikbaarheid_Label  TargetEntity  {  Pers_Beschikbaarheid  }
+Pers_Beschikbaarheid_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Pers_Beschikbaarheid_Label  Size  {  2.699202  0.300000  0.000000  m  }
+Pers_Beschikbaarheid_Label  RelativeEntity  {  Pers_Beschikbaarheid  }
+Pers_Downtime_Duration  RandomSeed  {  2  }
+Pers_Downtime_Duration  MinValue  {  300  s  }
+Pers_Downtime_Duration  MaxValue  {  30  h  }
+Pers_Downtime_Duration  Mean  {  1.5  h  }
+Pers_Downtime_Duration  Position  {  0.000000  -1.500000  0.000000  m  }
+Pers_Downtime_Duration  Points  {  {  -3.900  -7.300  0.000  m  }  {  -2.900  -7.300  0.000  m  }  }
+Pers_Downtime_Duration  RelativeEntity  {  Pers_Downtime_Interval  }
+Pers_Downtime_Duration_Label  TargetEntity  {  Pers_Downtime_Duration  }
+Pers_Downtime_Duration_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Pers_Downtime_Duration_Label  Size  {  3.120080  0.300000  0.000000  m  }
+Pers_Downtime_Duration_Label  RelativeEntity  {  Pers_Downtime_Duration  }
+Pers_Downtime_Interval  RandomSeed  {  1  }
+Pers_Downtime_Interval  MinValue  {  300  s  }
+Pers_Downtime_Interval  MaxValue  {  6.6674  h  }
+Pers_Downtime_Interval  Position  {  0.000000  -1.300000  0.000000  m  }
+Pers_Downtime_Interval  Points  {  {  -6.300  -7.100  0.000  m  }  {  -5.300  -7.100  0.000  m  }  }
+Pers_Downtime_Interval  RelativeEntity  {  Pers_Beschikbaarheid  }
+Pers_Downtime_Interval_Label  TargetEntity  {  Pers_Downtime_Interval  }
+Pers_Downtime_Interval_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Pers_Downtime_Interval_Label  Size  {  3.044681  0.300000  0.000000  m  }
+Pers_Downtime_Interval_Label  RelativeEntity  {  Pers_Downtime_Interval  }
+Pers_Uit_Bedrijf  FirstDowntime  {  5  d  }
+Pers_Uit_Bedrijf  Interval  {  7  d  }
+Pers_Uit_Bedrijf  Duration  {  48  h  }
+Pers_Uit_Bedrijf  Position  {  0.000000  -1.500000  0.000000  m  }
+Pers_Uit_Bedrijf  Points  {  {  -2.600  -7.800  0.000  m  }  {  -1.600  -7.800  0.000  m  }  }
+Pers_Uit_Bedrijf  RelativeEntity  {  Pers_Downtime_Duration  }
+Pers_Uit_Bedrijf_Label  TargetEntity  {  Pers_Uit_Bedrijf  }
+Pers_Uit_Bedrijf_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Pers_Uit_Bedrijf_Label  Size  {  2.051130  0.300000  0.000000  m  }
+Pers_Uit_Bedrijf_Label  RelativeEntity  {  Pers_Uit_Bedrijf  }
+Pers_Uit_Bedrijf_Threshold  OpenCondition  {  [Pers_Uit_Bedrijf].WorkingState  }
+Pers_Uit_Bedrijf_Threshold  CloseCondition  {  ![Pers_Uit_Bedrijf].WorkingState  }
+Pers_Uit_Bedrijf_Threshold  InitialOpenValue  {  TRUE  }
+Pers_Uit_Bedrijf_Threshold  Position  {  -0.300000  0.400000  0.000000  m  }
+Pers_Uit_Bedrijf_Threshold  Size  {  0.25  0.25  0.0  m  }
+Pers_Uit_Bedrijf_Threshold  Points  {  {  -4.000  -7.700  0.000  m  }  {  -3.000  -7.700  0.000  m  }  }
+Pers_Uit_Bedrijf_Threshold  RelativeEntity  {  Pers_Uit_Bedrijf  }
+Pers_Uitval  Position  {  0.000000  -1.500000  0.000000  m  }
+Pers_Uitval  Orientation  {  0  0  90  deg  }
+Pers_Uitval  Points  {  {  2.600  -5.700  0.000  m  }  {  3.600  -5.700  0.000  m  }  }
+Pers_Uitval  RelativeEntity  {  Oven_Downtime_Duration  }
+Pers_Uitval/Niet  NextComponentList  {  Pers_Uitval  Trommelen  }
+Pers_Uitval/Niet  Choice  {  Pers_Uitval_Kans  }
+Pers_Uitval/Niet  Position  {  0.500000  -2.000000  0.000000  m  }
+Pers_Uitval/Niet  Points  {  {  1.000  -5.000  0.000  m  }  {  2.000  -5.000  0.000  m  }  }
+Pers_Uitval/Niet  RelativeEntity  {  PtoU  }
+Pers_Uitval/Niet_Label  TargetEntity  {  Pers_Uitval/Niet  }
+Pers_Uitval/Niet_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Pers_Uitval/Niet_Label  Size  {  2.083245  0.300000  0.000000  m  }
+Pers_Uitval/Niet_Label  RelativeEntity  {  Pers_Uitval/Niet  }
+Pers_Uitval_Kans  RandomSeed  {  3  }
+Pers_Uitval_Kans  MinValue  {  1  }
+Pers_Uitval_Kans  MaxValue  {  2  }
+Pers_Uitval_Kans  ValueList  {  1  2  }
+Pers_Uitval_Kans  ProbabilityList  {  0.0139  0.9861  }
+Pers_Uitval_Kans  Position  {  0.000000  -1.200000  0.000000  m  }
+Pers_Uitval_Kans  Points  {  {  -1.500  -5.400  0.000  m  }  {  -0.500  -5.400  0.000  m  }  }
+Pers_Uitval_Kans  RelativeEntity  {  Pers_Uitval/Niet  }
+Pers_Uitval_Kans_Label  TargetEntity  {  Pers_Uitval_Kans  }
+Pers_Uitval_Kans_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Pers_Uitval_Kans_Label  Size  {  2.176795  0.300000  0.000000  m  }
+Pers_Uitval_Kans_Label  RelativeEntity  {  Pers_Uitval_Kans  }
+Pers_Uitval_Label  TargetEntity  {  Pers_Uitval  }
+Pers_Uitval_Label  Position  {  0.000000  -0.400000  0.000000  m  }
+Pers_Uitval_Label  Size  {  1.470977  0.300000  0.000000  m  }
+Pers_Uitval_Label  RelativeEntity  {  Pers_Uitval  }
+Pers_Uitval_Text  Format  {  %s  }
+Pers_Uitval_Text  DataSource  {  [Pers_Uitval].QueueLength  }
+Pers_Uitval_Text  Position  {  1.100000  0.100000  0.000000  m  }
+Pers_Uitval_Text  Points  {  {  6.700  -6.000  0.000  m  }  {  7.700  -6.000  0.000  m  }  }
+Pers_Uitval_Text  RelativeEntity  {  Pers_Uitval  }
+PtoU  NextComponent  {  Pers_Uitval/Niet  }
+PtoU  TravelTime  {  1  s  }
+PtoU  Position  {  0.500000  -2.500000  0.000000  m  }
+PtoU  Points  {  {  0.500  -2.500  0.000  m  }  {  1.000  -2.500  0.000  m  }  }
+PtoU_Label  TargetEntity  {  PtoU  }
+PtoU_Label  Position  {  0.200000  -0.200000  0.000000  m  }
+PtoU_Label  Size  {  0.698836  0.300000  0.000000  m  }
+PtoU_Label  RelativeEntity  {  PtoU  }
+PtoU_Label  Show  {  TRUE  }
+Queue1  Position  {  1.200000  -0.700000  0.000000  m  }
+Queue1  Points  {  {  1.200  -0.700  0.000  m  }  {  2.200  -0.700  0.000  m  }  }
+RT-2700  Position  {  0.700000  0.000000  0.000000  m  }
+RT-2700  Alignment  {  0.0  0.0  0.0  }
+RT-2700  Size  {  0.5  0.5  0.5  m  }
+RT-2700  Points  {  {  -3.800  -4.800  0.000  m  }  {  -2.800  -4.800  0.000  m  }  }
+RT-2700  RelativeEntity  {  zwarte_RT-2700  }
+RT-2700  DisplayModel  {  RT-27001-model  }
+RT-27001-model  ImageFile  {  RT-2700.jpg  }
+Rol_Teller  InputValueList  {  {  [OutputBuffer].QueueLength  }  }
+Rol_Teller  Position  {  1.500000  0.000000  0.000000  m  }
+Rol_Teller  Points  {  {  6.700  -0.700  0.000  m  }  {  7.700  -0.700  0.000  m  }  }
+Rol_Teller  RelativeEntity  {  OutputBuffer  }
+Rol_Teller_Label  TargetEntity  {  Rol_Teller  }
+Rol_Teller_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Rol_Teller_Label  Size  {  1.316689  0.300000  0.000000  m  }
+Rol_Teller_Label  RelativeEntity  {  Rol_Teller  }
+Rol_Teller_Logger  IncludeInitialization  {  FALSE  }
+Rol_Teller_Logger  Position  {  2.000000  0.000000  0.000000  m  }
+Rol_Teller_Logger  Points  {  {  6.200  -0.200  0.000  m  }  {  7.200  -0.200  0.000  m  }  }
+Rol_Teller_Logger  RelativeEntity  {  Rol_Teller  }
+Rol_Teller_Logger  ValueUnitTypeList  {  DimensionlessUnit  }
+Rol_Teller_Logger  ValueTraceList  {  {  Rol_Teller  }  }
+Rol_Teller_Logger_Label  TargetEntity  {  Rol_Teller_Logger  }
+Rol_Teller_Logger_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Rol_Teller_Logger_Label  Size  {  2.255086  0.300000  0.000000  m  }
+Rol_Teller_Logger_Label  RelativeEntity  {  Rol_Teller_Logger  }
+Server_not_Working  Position  {  -9.500000  0.500000  0.000000  m  }
+Server_not_Working  Alignment  {  }
+Server_not_Working  Points  {  {  -8.600  -0.500  0.000  m  }  {  -7.600  -0.500  0.000  m  }  }
+Server_not_Working  DisplayModel  {  SinkIconModel  }
+SlijpBuffer  Position  {  -0.500000  0.900000  0.000000  m  }
+SlijpBuffer  Orientation  {  0  0  270  deg  }
+SlijpBuffer  Points  {  {  3.600  -3.500  0.000  m  }  {  4.600  -3.500  0.000  m  }  }
+SlijpBuffer  RelativeEntity  {  Lijn_12  }
+SlijpBufferText  Format  {  %s  }
+SlijpBufferText  DataSource  {  [SlijpBuffer].QueueLength  }
+SlijpBufferText  Position  {  1.000000  0.100000  0.000000  m  }
+SlijpBufferText  Points  {  {  3.500  -2.000  0.000  m  }  {  4.500  -2.000  0.000  m  }  }
+SlijpBufferText  RelativeEntity  {  SlijpBuffer  }
+SlijpBuffer_Label  TargetEntity  {  SlijpBuffer  }
+SlijpBuffer_Label  Position  {  0.000000  -0.400000  0.000000  m  }
+SlijpBuffer_Label  Size  {  1.370645  0.300000  0.000000  m  }
+SlijpBuffer_Label  RelativeEntity  {  SlijpBuffer  }
+Slijp_Beschikbaarheid  Interval  {  Slijp_Downtime_Interval  }
+Slijp_Beschikbaarheid  Duration  {  Slijp_Downtime_Duration  }
+Slijp_Beschikbaarheid  Position  {  3.000000  -0.700000  0.000000  m  }
+Slijp_Beschikbaarheid  Points  {  {  0.500  -1.700  0.000  m  }  {  1.500  -1.700  0.000  m  }  }
+Slijp_Beschikbaarheid  RelativeEntity  {  SlijperijBuffer_Bijvullen  }
+Slijp_Beschikbaarheid_Indicator  DataSource  {  [Slijp_Beschikbaarheid].WorkingState  }
+Slijp_Beschikbaarheid_Indicator  Position  {  -0.300000  0.400000  0.000000  m  }
+Slijp_Beschikbaarheid_Indicator  Points  {  {  -0.175  0.275  0.000  m  }  {  0.825  0.275  0.000  m  }  }
+Slijp_Beschikbaarheid_Indicator  RelativeEntity  {  Slijp_Beschikbaarheid  }
+Slijp_Beschikbaarheid_Label  TargetEntity  {  Slijp_Beschikbaarheid  }
+Slijp_Beschikbaarheid_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Slijp_Beschikbaarheid_Label  Size  {  2.700997  0.300000  0.000000  m  }
+Slijp_Beschikbaarheid_Label  RelativeEntity  {  Slijp_Beschikbaarheid  }
+Slijp_Downtime_Duration  RandomSeed  {  8  }
+Slijp_Downtime_Duration  MinValue  {  300  s  }
+Slijp_Downtime_Duration  MaxValue  {  24  h  }
+Slijp_Downtime_Duration  Mean  {  1.5  h  }
+Slijp_Downtime_Duration  Position  {  3.000000  -0.700000  0.000000  m  }
+Slijp_Downtime_Duration  Points  {  {  0.500  -2.000  0.000  m  }  {  1.500  -2.000  0.000  m  }  }
+Slijp_Downtime_Duration  RelativeEntity  {  Oven_Downtime_Interval  }
+Slijp_Downtime_Duration_Label  TargetEntity  {  Slijp_Downtime_Duration  }
+Slijp_Downtime_Duration_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Slijp_Downtime_Duration_Label  Size  {  3.121875  0.300000  0.000000  m  }
+Slijp_Downtime_Duration_Label  RelativeEntity  {  Slijp_Downtime_Duration  }
+Slijp_Downtime_Interval  RandomSeed  {  7  }
+Slijp_Downtime_Interval  MinValue  {  300  s  }
+Slijp_Downtime_Interval  MaxValue  {  11.4236  h  }
+Slijp_Downtime_Interval  Position  {  3.000000  -0.800000  0.000000  m  }
+Slijp_Downtime_Interval  Points  {  {  0.500  -1.800  0.000  m  }  {  1.500  -1.800  0.000  m  }  }
+Slijp_Downtime_Interval  RelativeEntity  {  Oven_Beschikbaarheid  }
+Slijp_Downtime_Interval_Label  TargetEntity  {  Slijp_Downtime_Interval  }
+Slijp_Downtime_Interval_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Slijp_Downtime_Interval_Label  Size  {  3.046476  0.300000  0.000000  m  }
+Slijp_Downtime_Interval_Label  RelativeEntity  {  Slijp_Downtime_Interval  }
+Slijp_Uit_Bedrijf  FirstDowntime  {  5  d  }
+Slijp_Uit_Bedrijf  Interval  {  7  d  }
+Slijp_Uit_Bedrijf  Duration  {  48  h  }
+Slijp_Uit_Bedrijf  Position  {  5.500000  -8.000000  0.000000  m  }
+Slijp_Uit_Bedrijf  Points  {  {  0.000  -7.500  0.000  m  }  {  1.000  -7.500  0.000  m  }  }
+Slijp_Uit_Bedrijf_Label  TargetEntity  {  Slijp_Uit_Bedrijf  }
+Slijp_Uit_Bedrijf_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Slijp_Uit_Bedrijf_Label  Size  {  2.052926  0.300000  0.000000  m  }
+Slijp_Uit_Bedrijf_Label  RelativeEntity  {  Slijp_Uit_Bedrijf  }
+Slijp_Uit_Bedrijf_Threshold  OpenCondition  {  [Slijp_Uit_Bedrijf].WorkingState  }
+Slijp_Uit_Bedrijf_Threshold  CloseCondition  {  ![Slijp_Uit_Bedrijf].WorkingState  }
+Slijp_Uit_Bedrijf_Threshold  InitialOpenValue  {  TRUE  }
+Slijp_Uit_Bedrijf_Threshold  Position  {  -0.300000  0.400000  0.000000  m  }
+Slijp_Uit_Bedrijf_Threshold  Size  {  0.25  0.25  0.0  m  }
+Slijp_Uit_Bedrijf_Threshold  Points  {  {  -0.175  0.275  0.000  m  }  {  0.825  0.275  0.000  m  }  }
+Slijp_Uit_Bedrijf_Threshold  RelativeEntity  {  Slijp_Uit_Bedrijf  }
+Slijp_Uitval  Position  {  8.500000  -5.500000  0.000000  m  }
+Slijp_Uitval  Orientation  {  0  0  90  deg  }
+Slijp_Uitval  Points  {  {  8.500  -5.500  0.000  m  }  {  9.500  -5.500  0.000  m  }  }
+Slijp_Uitval/Niet  NextComponentList  {  Slijp_Uitval  UtoO  }
+Slijp_Uitval/Niet  Choice  {  Slijp_Uitval_Kans  }
+Slijp_Uitval/Niet  Position  {  7.000000  -4.500000  0.000000  m  }
+Slijp_Uitval/Niet  Points  {  {  8.000  -4.800  0.000  m  }  {  9.000  -4.800  0.000  m  }  }
+Slijp_Uitval/Niet_Label  TargetEntity  {  Slijp_Uitval/Niet  }
+Slijp_Uitval/Niet_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Slijp_Uitval/Niet_Label  Size  {  2.085040  0.300000  0.000000  m  }
+Slijp_Uitval/Niet_Label  RelativeEntity  {  Slijp_Uitval/Niet  }
+Slijp_Uitval_Kans  RandomSeed  {  9  }
+Slijp_Uitval_Kans  MinValue  {  1  }
+Slijp_Uitval_Kans  MaxValue  {  2  }
+Slijp_Uitval_Kans  ValueList  {  1  2  }
+Slijp_Uitval_Kans  ProbabilityList  {  0.0379  0.9621  }
+Slijp_Uitval_Kans  Position  {  7.000000  -5.700000  0.000000  m  }
+Slijp_Uitval_Kans  Points  {  {  7.500  -6.000  0.000  m  }  {  8.500  -6.000  0.000  m  }  }
+Slijp_Uitval_Kans_Label  TargetEntity  {  Slijp_Uitval_Kans  }
+Slijp_Uitval_Kans_Label  Position  {  0.000000  -0.650000  0.000000  m  }
+Slijp_Uitval_Kans_Label  Size  {  2.178590  0.300000  0.000000  m  }
+Slijp_Uitval_Kans_Label  RelativeEntity  {  Slijp_Uitval_Kans  }
+Slijp_Uitval_Label  TargetEntity  {  Slijp_Uitval  }
+Slijp_Uitval_Label  Position  {  0.000000  -0.400000  0.000000  m  }
+Slijp_Uitval_Label  Size  {  1.472773  0.300000  0.000000  m  }
+Slijp_Uitval_Label  RelativeEntity  {  Slijp_Uitval  }
+Slijp_Uitval_Text  Format  {  %s  }
+Slijp_Uitval_Text  DataSource  {  [Slijp_Uitval].QueueLength  }
+Slijp_Uitval_Text  Position  {  0.800000  0.000000  0.000000  m  }
+Slijp_Uitval_Text  Points  {  {  9.700  -2.700  0.000  m  }  {  10.700  -2.700  0.000  m  }  }
+Slijp_Uitval_Text  RelativeEntity  {  Slijp_Uitval  }
+SlijperijBuffer_Bijvullen  OpenCondition  {  [SlijpBuffer].QueueLength < 14 * 72  }
+SlijperijBuffer_Bijvullen  CloseCondition  {  }
+SlijperijBuffer_Bijvullen  InitialOpenValue  {  TRUE  }
+SlijperijBuffer_Bijvullen  Position  {  2.500000  -3.500000  0.000000  m  }
+SlijperijBuffer_Bijvullen  Points  {  {  -0.250  -1.750  0.000  m  }  {  0.750  -1.750  0.000  m  }  }
+SlijperijBuffer_Bijvullen_Label  TargetEntity  {  SlijperijBuffer_Bijvullen  }
+SlijperijBuffer_Bijvullen_Label  Position  {  0.000000  -0.400000  0.000000  m  }
+SlijperijBuffer_Bijvullen_Label  Size  {  2.911835  0.300000  0.000000  m  }
+SlijperijBuffer_Bijvullen_Label  RelativeEntity  {  SlijperijBuffer_Bijvullen  }
+StoU  NextComponent  {  Slijp_Uitval/Niet  }
+StoU  TravelTime  {  1  s  }
+StoU  Position  {  6.500000  -2.500000  0.000000  m  }
+StoU  Points  {  {  6.500  -2.500  0.000  m  }  {  7.000  -2.500  0.000  m  }  }
+StoU_Label  TargetEntity  {  StoU  }
+StoU_Label  Position  {  0.200000  -0.200000  0.000000  m  }
+StoU_Label  Size  {  0.694249  0.300000  0.000000  m  }
+StoU_Label  RelativeEntity  {  StoU  }
+StoU_Label  Show  {  TRUE  }
+Text1  Format  {  Aannames: - bufferTargets  }
+Text1  Position  {  -10.200000  -4.800000  0.000000  m  }
+Text1  Points  {  {  -7.700  -5.100  0.000  m  }  {  -6.700  -5.100  0.000  m  }  }
+Text2  Format  {  - minStilstandTijden  }
+Text2  Position  {  -8.250000  -5.300000  0.000000  m  }
+Text2  Points  {  {  -9.600  -5.800  0.000  m  }  {  -8.600  -5.800  0.000  m  }  }
+Text3  Format  {  - maxStilstandTijden  }
+Text3  Position  {  -8.175000  -6.300000  0.000000  m  }
+Text3  Points  {  {  -9.500  -6.400  0.000  m  }  {  -8.500  -6.400  0.000  m  }  }
+Text4  Format  {  - gemStilStandTijden  }
+Text4  Position  {  -8.150000  -5.800000  0.000000  m  }
+Text4  Points  {  {  -9.800  -7.200  0.000  m  }  {  -8.800  -7.200  0.000  m  }  }
+Text5  Format  {  random prestatieverliezen  }
+Text5  Position  {  -6.600000  -7.600000  0.000000  m  }
+Text5  Points  {  {  -12.500  -7.600  0.000  m  }  {  -11.500  -7.600  0.000  m  }  }
+Text6  Format  {  - OEEPrestatieKPI  s  direct   }  Text6  Position  {  -7.550000  -6.800000  0.000000  m  }  Text6  Points  {  {  -14.000  -6.400  0.000  m  }  {  -13.000  -6.400  0.000  m  }  }  Text7  Format  {  doorberekend op norm ipv  }  Text7  Position  {  -6.600000  -7.200000  0.000000  m  }  Text7  Points  {  {  -14.100  -7.400  0.000  m  }  {  -13.100  -7.400  0.000  m  }  }  Text8  Format  {  - Ovens verwerken maar 1  }  Text8  Position  {  -7.500000  -8.000000  0.000000  m  }  Text8  Points  {  {  -8.300  -8.500  0.000  m  }  {  -7.300  -8.500  0.000  m  }  }  Text9  Format  {  container tegelijk  }  Text9  Position  {  -7.600000  -8.400000  0.000000  m  }  Text9  Points  {  {  -8.000  -9.200  0.000  m  }  {  -7.000  -9.200  0.000  m  }  }  Text10  Format  {  - RT-2700 als enige product  }  Text10  Position  {  -7.300000  -8.900000  0.000000  m  }  Text10  Points  {  {  -8.700  -9.600  0.000  m  }  {  -7.700  -9.600  0.000  m  }  }  Title  Description  {  Title for the simulation model  }  Title  TextHeight  {  18  }  Title  Format  {  Tsubaki Nakashima  }  Title  ScreenPosition  {  15  15  }  Title  FontColour  {  150  23  46  }  Title  FontStyle  {  BOLD  }  Trommelen  NextComponent  {  Pack1  }  Trommelen  TravelTime  {  8  h  }  Trommelen  Position  {  1.500000  -2.500000  0.000000  m  }  Trommelen  Points  {  {  1.500  -2.500  0.000  m  }  {  2.000  -2.500  0.000  m  }  }  Trommelen_Label  TargetEntity  {  Trommelen  }  Trommelen_Label  Position  {  0.200000  -0.200000  0.000000  m  }  Trommelen_Label  Size  {  1.449834  0.300000  0.000000  m  }  Trommelen_Label  RelativeEntity  {  Trommelen  }  UtoO  NextComponent  {  OutputBuffer  }  UtoO  Position  {  7.500000  -2.500000  0.000000  m  }  UtoO  Points  {  {  7.500  -2.500  0.000  m  }  {  8.000  -2.500  0.000  m  }  }  UtoO_Label  TargetEntity  {  UtoO  }  UtoO_Label  Position  {  0.200000  -0.200000  0.000000  m  }  UtoO_Label  Size  {  0.722773  0.300000  0.000000  m  }  UtoO_Label  RelativeEntity  {  UtoO  }  UtoS  NextComponent  {  Lijn_12  }  UtoS  Position  {  4.500000  -2.500000  0.000000  m  }  UtoS  Points  {  {  4.500  -2.500  0.000  m  }  {  5.000  -2.500  0.000  m  }  }  UtoS_Label  TargetEntity  {  UtoS  }  UtoS_Label  Position  {  0.200000  -0.200000  0.000000  m  }  UtoS_Label  Size  {  0.694249  0.300000  0.000000  m  }  UtoS_Label  RelativeEntity  {  UtoS  }  View1  Description  {  Default view window  }  View1  ViewCenter  {  5.288504  -1.904725  7.828749  m  }  View1  ViewPosition  {  5.288504  -1.904725  16.488997  m  }  View1  WindowSize  {  1692  618  }  View1  WindowPosition  {  222  110  }  View1  TitleBarText  {  Tsubaki Nakashima  }  View1  ShowWindow  {  TRUE  }  View1  Lock2D  {  TRUE  }  View1  SkyboxImage  {  <res>/images/sky_map_2048x1024.jpg  }  XY-Grid  Description  {  Grid for the X-Y plane (100 m x 100 m)  }  XY-Grid  Size  {  100  100  m  }  XY-Grid  DisplayModel  {  Grid100x100  }  XY-Grid  Movable  {  FALSE  }  XYZ-Axis  Description  {  Unit vectors  }  XYZ-Axis  Alignment  {  -0.4393409  -0.4410096  -0.4394292  }  XYZ-Axis  Size  {  1.125000  1.1568242  1.1266404  m  }  XYZ-Axis  DisplayModel  {  Axis  }  XYZ-Axis  Movable  {  FALSE  }  staalkabels-10-mm-model  ImageFile  {  staalkabels-10-mm.jpg  }  zwarte_RT-2700  Position  {  0.700000  0.000000  0.000000  m  }  zwarte_RT-2700  Alignment  {  0.0  0.0  0.0  }  zwarte_RT-2700  Size  {  0.5  0.5  0.5  m  }  zwarte_RT-2700  Points  {  {  -4.400  -4.300  0.000  m  }  {  -3.400  -4.300  0.000  m  }  }  zwarte_RT-2700  RelativeEntity  {  10mm_staalkabel  }  zwarte_RT-2700  DisplayModel  {  zwarte_RT-2700-model  }  zwarte_RT-2700-model  ImageFile  {  zwarte RT-2700.png  }  zwarte_RT-2700_to_RT-2700  NextComponent  {  StoU  }  zwarte_RT-2700_to_RT-2700  GraphicsList  {  RT-2700  }  zwarte_RT-2700_to_RT-2700  Position  {  6.500000  -1.900000  0.000000  m  }  zwarte_RT-2700_to_RT-2700  Size  {  0.25  0.25  0.25  m  }  zwarte_RT-2700_to_RT-2700  Points  {  {  7.300  -1.300  0.000  m  }  {  8.300  -1.300  0.000  m  }  }
+*** ERROR *** Leftover input at end of file
+
+Input Error: 1 input errors and 0 warnings found
