@@ -1,0 +1,14 @@
+Simulation	Software Name	JaamSim	-
+Simulation	Software Version	2018-02	-
+Simulation	Configuration File	H:\stefanr\GitHub\Afstudeerbestanden\Tsubaki Nakashima.cfg	-
+Simulation	RunNumber	1.0	-
+Simulation	RunIndex	{ 1 }	-
+Simulation	Present Time and Date	apr 24, 2018 17:30	-
+Simulation	Initialization Duration	0.0	h
+Simulation	Run Duration	744.0	h
+Simulation	Present Simulation Time	0.0	h
+
+##### RUN 1 #####
+
+SimTime	[OutputBuffer].QueueLength
+h	
