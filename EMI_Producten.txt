@@ -1,3 +1,5 @@
+ProductID, FysiekModelID, norm
+
 0, 87, 167.6955[s]
 0, 106, 126.8931[s]
 0, 24, 442.5268[s]

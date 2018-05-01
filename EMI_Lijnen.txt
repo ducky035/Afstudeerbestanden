@@ -1,0 +1,5 @@
+FysiekModelID, minStilstandTijd, gemStilstandTijd, maxStilstandTijd, minPrestatieVerliesTijd, gemPrestatieVerliesTijd, maxPrestatieVerliesTijd, kwaliteit, 1 - kwaliteit
+
+87, 300[s], 1.5[h], 30[h], 30[s], 60[s], 120[s], 0.0139, 0.9861
+106, 300[s], 1.5[h], 30[h], 30[s], 60[s], 120[s], 0.0139, 0.9861
+24, 300[s], 1.5[h], 30[h], 30[s], 60[s], 120[s], 0.0139, 0.9861

@@ -1,3 +1,5 @@
+ProductID(String)_FysiekModelID(String)
+
 '"0_87"'
 '"0_106"'
 '"0_24"'
