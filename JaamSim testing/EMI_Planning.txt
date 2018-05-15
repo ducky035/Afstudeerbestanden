@@ -1,0 +1,21 @@
+EMI_Planning_indexes_Branch1: 13587
+							  45503
+							  89052
+
+EMI_Planning_Namen_Branch1: [Buffer_324] [Buffer_325]
+							[Buffer_325] [Buffer_326]
+							[Buffer_84]
+
+EMI_Planning_Branch1:            324          325
+								 325		  326
+								  84
+								 
+indexOf(<Branch1NextComponentList>,[EMI_Planning_Branch1](<productIndex>).Value(<minQueueLengthIndex>))
+
+<Branch1NextComponentList> = 324 325
+
+<minQueueLengthIndex> = indexOf(<queueLengths>, sort(|x,y|(x<y),<queueLengths>)(1))
+
+<queueLengths> = map(|x|(x.QueueLength),[EMI_Planning_Namen_Branch1](<productIndex>).Value)
+
+<productIndex> = indexOf([EMI_Planning_indexes_Branch1].Value, this.obj.ID)
