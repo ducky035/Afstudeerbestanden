@@ -41,7 +41,7 @@ namespace SharpNeat.EvolutionAlgorithms
         IList<Specie<TGenome>> _specieList;
         /// <summary>Index of the specie that contains _currentBestGenome.</summary>
         int _bestSpecieIdx;
-        readonly XorShiftRandom _rng = new XorShiftRandom();
+        readonly XorShiftRandom _rng = null;
         readonly NeatAlgorithmStats _stats;
 
         ComplexityRegulationMode _complexityRegulationMode;
@@ -58,6 +58,7 @@ namespace SharpNeat.EvolutionAlgorithms
             _eaParams = new NeatEvolutionAlgorithmParameters();
             _eaParamsComplexifying = _eaParams;
             _eaParamsSimplifying = _eaParams.CreateSimplifyingParameters();
+            _rng = _eaParams.RandomSeed == null ? new XorShiftRandom() : new XorShiftRandom(_eaParams.RandomSeed.Value);
             _stats = new NeatAlgorithmStats(_eaParams);
             _speciationStrategy = new KMeansClusteringStrategy<TGenome>(new ManhattanDistanceMetric());
 
@@ -75,6 +76,7 @@ namespace SharpNeat.EvolutionAlgorithms
             _eaParams = eaParams;
             _eaParamsComplexifying = _eaParams;
             _eaParamsSimplifying = _eaParams.CreateSimplifyingParameters();
+            _rng = _eaParams.RandomSeed == null ? new XorShiftRandom() : new XorShiftRandom(_eaParams.RandomSeed.Value);
             _stats = new NeatAlgorithmStats(_eaParams);
             _speciationStrategy = speciationStrategy;
 

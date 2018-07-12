@@ -119,7 +119,7 @@ namespace SharpNeat.Domains._2048
             _description = XmlUtils.TryGetValueAsString(xmlConfig, "Description");
             _parallelOptions = ExperimentUtils.ReadParallelOptions(xmlConfig);
 
-            _eaParams = new NeatEvolutionAlgorithmParameters
+            _eaParams = new NeatEvolutionAlgorithmParameters(69)
             {
                 SpecieCount = _specieCount
             };

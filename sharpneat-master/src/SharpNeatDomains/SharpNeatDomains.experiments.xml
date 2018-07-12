@@ -313,6 +313,21 @@ Each test case is tested in turn. An output less than 0.5 is interpreted as a 0(
 
     </Config>
   </Experiment>
+
+  <Experiment name="2048 (NEAT)">
+    <AssemblyPath>SharpNeatDomains.dll</AssemblyPath>
+    <ClassName>SharpNeat.Domains._2048._2048Experiment</ClassName>
+    <Config>
+      <PopulationSize>1000</PopulationSize>
+      <SpecieCount>50</SpecieCount>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+      </Activation>
+      <ComplexityRegulationStrategy>Absolute</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <Description></Description>
+    </Config>
+  </Experiment>
   
   <Experiment name="Pole Balancing[Double Pole] (NEAT)">
     <AssemblyPath>SharpNeatDomains.dll</AssemblyPath>
