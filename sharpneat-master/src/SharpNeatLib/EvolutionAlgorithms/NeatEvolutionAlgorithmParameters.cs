@@ -35,8 +35,6 @@ namespace SharpNeat.EvolutionAlgorithms
 
         #region Instance Fields
 
-        int? _randomSeed;
-
         int _specieCount;
         double _elitismProportion;
         double _selectionProportion;
@@ -56,10 +54,8 @@ namespace SharpNeat.EvolutionAlgorithms
         /// <summary>
         /// Constructs with the default parameters.
         /// </summary>
-        public NeatEvolutionAlgorithmParameters(int? randomSeed = null)
+        public NeatEvolutionAlgorithmParameters()
         {
-            _randomSeed = randomSeed;
-
             _specieCount = DefaultSpecieCount;
             _elitismProportion = DefaultElitismProportion;
             _selectionProportion = DefaultSelectionProportion;
@@ -80,8 +76,6 @@ namespace SharpNeat.EvolutionAlgorithms
         /// </summary>
         public NeatEvolutionAlgorithmParameters(NeatEvolutionAlgorithmParameters copyFrom)
         {
-            _randomSeed = copyFrom._randomSeed;
-
             _specieCount = copyFrom._specieCount;
             _elitismProportion = copyFrom._elitismProportion;
             _selectionProportion = copyFrom._selectionProportion;
@@ -98,15 +92,6 @@ namespace SharpNeat.EvolutionAlgorithms
         #endregion
 
         #region Properties
-
-        /// <summary>
-        /// Gets or sets the random seed.
-        /// </summary>
-        public int? RandomSeed
-        {
-            get { return _randomSeed; }
-            set { _randomSeed = value; }
-        }
 
         /// <summary>
         /// Gets or sets the specie count.

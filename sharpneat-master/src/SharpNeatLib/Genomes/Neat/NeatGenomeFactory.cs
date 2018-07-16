@@ -52,8 +52,8 @@ namespace SharpNeat.Genomes.Neat
                 = new KeyedCircularBuffer<uint,AddedNeuronGeneStruct>(__INNOVATION_HISTORY_BUFFER_SIZE);
 
         /// <summary>Random number generator associated with this factory.</summary>
-        protected readonly IRandomSource _rng = null;
-        readonly ZigguratGaussianDistribution _gaussianSampler = null;
+        protected readonly IRandomSource _rng = RandomSourceFactory.Create();
+        readonly ZigguratGaussianDistribution _gaussianSampler = new ZigguratGaussianDistribution();
 
         /// <summary>Activation function library associated with this factory.</summary>
         protected readonly IActivationFunctionLibrary _activationFnLibrary;
@@ -75,9 +75,6 @@ namespace SharpNeat.Genomes.Neat
             _genomeIdGenerator = new UInt32IdGenerator();
             _innovationIdGenerator = new UInt32IdGenerator();
 
-            _rng = RandomSourceFactory.Create();
-            _gaussianSampler = new ZigguratGaussianDistribution();
-
             _activationFnLibrary = DefaultActivationFunctionLibrary.CreateLibraryNeat(_neatGenomeParamsCurrent.ActivationFn);
         }
 
@@ -85,12 +82,10 @@ namespace SharpNeat.Genomes.Neat
         /// Constructs a NeatGenomeFactory with the provided NeatGenomeParameters and ID generators initialized to zero.
         /// </summary>
         public NeatGenomeFactory(int inputNeuronCount, int outputNeuronCount,
-                                 NeatGenomeParameters neatGenomeParams, int? randomSeed = null)
+                                 NeatGenomeParameters neatGenomeParams)
         {
             _inputNeuronCount = inputNeuronCount;
             _outputNeuronCount = outputNeuronCount;
-            _rng = randomSeed = null ? RandomSourceFactory.Create() : new XorShiftRandom(randomSeed.Value);
-            _gaussianSampler = new ZigguratGaussianDistribution();
             _activationFnLibrary = DefaultActivationFunctionLibrary.CreateLibraryNeat(neatGenomeParams.ActivationFn);
 
             _neatGenomeParamsCurrent = neatGenomeParams;
