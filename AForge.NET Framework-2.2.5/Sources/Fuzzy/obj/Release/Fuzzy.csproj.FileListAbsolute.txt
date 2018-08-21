@@ -1,0 +1,7 @@
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Fuzzy.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Fuzzy.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Fuzzy.xml
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Fuzzy\obj\Release\Fuzzy.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Fuzzy\obj\Release\Fuzzy.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Fuzzy\obj\Release\AForge.Fuzzy.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Fuzzy\obj\Release\AForge.Fuzzy.pdb

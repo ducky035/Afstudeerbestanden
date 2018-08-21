@@ -1,0 +1,6 @@
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.xml
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Core\obj\Release\Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Core\obj\Release\AForge.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Core\obj\Release\AForge.pdb

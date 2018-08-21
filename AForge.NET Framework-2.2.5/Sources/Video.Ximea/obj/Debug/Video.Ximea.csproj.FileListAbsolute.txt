@@ -1,0 +1,4 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.Ximea.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.Ximea.pdb
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Video.Ximea\obj\Debug\AForge.Video.Ximea.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Video.Ximea\obj\Debug\AForge.Video.Ximea.pdb

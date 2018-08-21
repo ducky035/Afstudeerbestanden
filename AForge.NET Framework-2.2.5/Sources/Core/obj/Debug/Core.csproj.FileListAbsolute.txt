@@ -1,0 +1,6 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.pdb
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.xml
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Core\obj\Debug\AForge.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Core\obj\Debug\AForge.pdb

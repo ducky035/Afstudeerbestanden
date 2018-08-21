@@ -1,0 +1,7 @@
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Surveyor.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Surveyor.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Robotics.Surveyor.xml
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Surveyor\obj\Release\Robotics.Surveyor.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Surveyor\obj\Release\Robotics.Surveyor.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Surveyor\obj\Release\AForge.Robotics.Surveyor.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Robotics.Surveyor\obj\Release\AForge.Robotics.Surveyor.pdb

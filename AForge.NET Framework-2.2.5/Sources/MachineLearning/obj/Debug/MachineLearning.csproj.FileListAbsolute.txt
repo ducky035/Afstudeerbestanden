@@ -1,0 +1,6 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.MachineLearning.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.MachineLearning.pdb
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.MachineLearning.xml
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\MachineLearning\obj\Debug\MachineLearning.csprojResolveAssemblyReference.cache
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\MachineLearning\obj\Debug\AForge.MachineLearning.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\MachineLearning\obj\Debug\AForge.MachineLearning.pdb

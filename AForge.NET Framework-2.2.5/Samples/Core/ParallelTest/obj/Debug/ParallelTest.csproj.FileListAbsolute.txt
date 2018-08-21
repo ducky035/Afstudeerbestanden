@@ -1,0 +1,9 @@
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Samples\Core\ParallelTest\bin\Debug\ParallelTest.exe
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Samples\Core\ParallelTest\bin\Debug\ParallelTest.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Samples\Core\ParallelTest\bin\Debug\AForge.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Samples\Core\ParallelTest\bin\Debug\AForge.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Samples\Core\ParallelTest\bin\Debug\AForge.xml
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Samples\Core\ParallelTest\obj\Debug\ParallelTest.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Samples\Core\ParallelTest\obj\Debug\ParallelTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Samples\Core\ParallelTest\obj\Debug\ParallelTest.exe
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Samples\Core\ParallelTest\obj\Debug\ParallelTest.pdb

@@ -1,0 +1,7 @@
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.VFW.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.VFW.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.VFW.xml
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.VFW\obj\Release\Video.VFW.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.VFW\obj\Release\Video.VFW.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.VFW\obj\Release\AForge.Video.VFW.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.VFW\obj\Release\AForge.Video.VFW.pdb

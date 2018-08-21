@@ -1,0 +1,6 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Math.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Math.pdb
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Math.xml
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Math\obj\Debug\Math.csprojResolveAssemblyReference.cache
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Math\obj\Debug\AForge.Math.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Math\obj\Debug\AForge.Math.pdb

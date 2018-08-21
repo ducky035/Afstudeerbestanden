@@ -1,0 +1,6 @@
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Vision.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Vision.pdb
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Vision.xml
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Vision\obj\Debug\Vision.csprojResolveAssemblyReference.cache
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Vision\obj\Debug\AForge.Vision.dll
+C:\Users\StefanR\Downloads\AForge.NET Framework-2.2.5\Sources\Vision\obj\Debug\AForge.Vision.pdb

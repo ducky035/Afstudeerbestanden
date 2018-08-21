@@ -1,0 +1,7 @@
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.Ximea.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.Ximea.pdb
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Release\AForge.Video.Ximea.xml
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.Ximea\obj\Release\Video.Ximea.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.Ximea\obj\Release\Video.Ximea.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.Ximea\obj\Release\AForge.Video.Ximea.dll
+C:\Users\Administrator\Downloads\AForge.NET Framework-2.2.5\Sources\Video.Ximea\obj\Release\AForge.Video.Ximea.pdb
